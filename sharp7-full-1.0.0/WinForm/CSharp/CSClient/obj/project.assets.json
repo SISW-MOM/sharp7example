@@ -1,0 +1,532 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
+      "System.Data.SQLite/1.0.109.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Data.SQLite.Core": "1.0.109.2",
+          "System.Data.SQLite.EF6": "1.0.109",
+          "System.Data.SQLite.Linq": "1.0.109"
+        }
+      },
+      "System.Data.SQLite.Core/1.0.109.2": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "build": {
+          "build/net46/System.Data.SQLite.Core.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/netstandard2.0/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/netstandard2.0/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/netstandard2.0/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/netstandard2.0/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "System.Data.SQLite.EF6/1.0.109": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.2.0"
+        },
+        "compile": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        }
+      },
+      "System.Data.SQLite.Linq/1.0.109": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
+      "System.Data.SQLite/1.0.109.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Data.SQLite.Core": "1.0.109.2",
+          "System.Data.SQLite.EF6": "1.0.109",
+          "System.Data.SQLite.Linq": "1.0.109"
+        }
+      },
+      "System.Data.SQLite.Core/1.0.109.2": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "build": {
+          "build/net46/System.Data.SQLite.Core.targets": {}
+        }
+      },
+      "System.Data.SQLite.EF6/1.0.109": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.2.0"
+        },
+        "compile": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        }
+      },
+      "System.Data.SQLite.Linq/1.0.109": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x64": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
+      "System.Data.SQLite/1.0.109.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Data.SQLite.Core": "1.0.109.2",
+          "System.Data.SQLite.EF6": "1.0.109",
+          "System.Data.SQLite.Linq": "1.0.109"
+        }
+      },
+      "System.Data.SQLite.Core/1.0.109.2": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/netstandard2.0/SQLite.Interop.dll": {}
+        },
+        "build": {
+          "build/net46/System.Data.SQLite.Core.targets": {}
+        }
+      },
+      "System.Data.SQLite.EF6/1.0.109": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.2.0"
+        },
+        "compile": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        }
+      },
+      "System.Data.SQLite.Linq/1.0.109": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win-x86": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
+      "System.Data.SQLite/1.0.109.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Data.SQLite.Core": "1.0.109.2",
+          "System.Data.SQLite.EF6": "1.0.109",
+          "System.Data.SQLite.Linq": "1.0.109"
+        }
+      },
+      "System.Data.SQLite.Core/1.0.109.2": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "native": {
+          "runtimes/win-x86/native/netstandard2.0/SQLite.Interop.dll": {}
+        },
+        "build": {
+          "build/net46/System.Data.SQLite.Core.targets": {}
+        }
+      },
+      "System.Data.SQLite.EF6/1.0.109": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.2.0"
+        },
+        "compile": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        }
+      },
+      "System.Data.SQLite.Linq/1.0.109": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EntityFramework/6.2.0": {
+      "sha512": "7u/Xw6dnODaoB8opNC/Uz8nT/LKOxsvJhObYU+m0CErCXdOsyTC1MZwqQoam8lMehLTxBoMBewvWoOQUBaUKsQ==",
+      "type": "package",
+      "path": "entityframework/6.2.0",
+      "files": [
+        ".signature.p7s",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.6.2.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+      "sha512": "DfceS96ustwfL8EOJNNRtpk6b0RylhjNpgeeemuvi9X4GYks2UTeAimjSrdFEfuqRo5ibZ4Sd0gJIeDr9gMa6Q==",
+      "type": "package",
+      "path": "microsoft.office.interop.excel/15.0.4795.1000",
+      "files": [
+        "lib/net20/Microsoft.Office.Interop.Excel.dll",
+        "microsoft.office.interop.excel.15.0.4795.1000.nupkg.sha512",
+        "microsoft.office.interop.excel.nuspec"
+      ]
+    },
+    "System.Data.SQLite/1.0.109.2": {
+      "sha512": "dsN3a0THLGDu1QDHGdhETU9rgr1tU0IOwnnOQHTR2huXU6HS/o/Nbq1Bol6jrLM3GqQrdNjPxVPZUPaYDRhT4Q==",
+      "type": "package",
+      "path": "system.data.sqlite/1.0.109.2",
+      "files": [
+        ".signature.p7s",
+        "system.data.sqlite.1.0.109.2.nupkg.sha512",
+        "system.data.sqlite.nuspec"
+      ]
+    },
+    "System.Data.SQLite.Core/1.0.109.2": {
+      "sha512": "eZuKsu2eriGsxsAAlVslcA4ylLnFmfpA3iWeUyU82RNz4yDYlwLAA/zkbxejCEO+GdTd0zSBN4kDHneM39PEsg==",
+      "type": "package",
+      "path": "system.data.sqlite.core/1.0.109.2",
+      "files": [
+        ".signature.p7s",
+        "build/net20/System.Data.SQLite.Core.targets",
+        "build/net20/x64/SQLite.Interop.dll",
+        "build/net20/x86/SQLite.Interop.dll",
+        "build/net40/System.Data.SQLite.Core.targets",
+        "build/net40/x64/SQLite.Interop.dll",
+        "build/net40/x86/SQLite.Interop.dll",
+        "build/net45/System.Data.SQLite.Core.targets",
+        "build/net45/x64/SQLite.Interop.dll",
+        "build/net45/x86/SQLite.Interop.dll",
+        "build/net451/System.Data.SQLite.Core.targets",
+        "build/net451/x64/SQLite.Interop.dll",
+        "build/net451/x86/SQLite.Interop.dll",
+        "build/net46/System.Data.SQLite.Core.targets",
+        "build/net46/x64/SQLite.Interop.dll",
+        "build/net46/x86/SQLite.Interop.dll",
+        "lib/net20/System.Data.SQLite.dll",
+        "lib/net20/System.Data.SQLite.dll.config",
+        "lib/net20/System.Data.SQLite.xml",
+        "lib/net40/System.Data.SQLite.dll",
+        "lib/net40/System.Data.SQLite.dll.config",
+        "lib/net40/System.Data.SQLite.xml",
+        "lib/net45/System.Data.SQLite.dll",
+        "lib/net45/System.Data.SQLite.dll.config",
+        "lib/net45/System.Data.SQLite.xml",
+        "lib/net451/System.Data.SQLite.dll",
+        "lib/net451/System.Data.SQLite.dll.config",
+        "lib/net451/System.Data.SQLite.xml",
+        "lib/net46/System.Data.SQLite.dll",
+        "lib/net46/System.Data.SQLite.dll.config",
+        "lib/net46/System.Data.SQLite.xml",
+        "lib/netstandard2.0/System.Data.SQLite.dll",
+        "lib/netstandard2.0/System.Data.SQLite.dll.config",
+        "lib/netstandard2.0/System.Data.SQLite.xml",
+        "runtimes/linux-x64/native/netstandard2.0/SQLite.Interop.dll",
+        "runtimes/osx-x64/native/netstandard2.0/SQLite.Interop.dll",
+        "runtimes/win-x64/native/netstandard2.0/SQLite.Interop.dll",
+        "runtimes/win-x86/native/netstandard2.0/SQLite.Interop.dll",
+        "system.data.sqlite.core.1.0.109.2.nupkg.sha512",
+        "system.data.sqlite.core.nuspec"
+      ]
+    },
+    "System.Data.SQLite.EF6/1.0.109": {
+      "sha512": "1DbR0GQkbhEzr59vGaMBSbwSQeB8+iQnEbujRz6GIvawp9VBZjXLaUfDPjHEQTs9rwhJAYRZgT9j2ObM6OPE6g==",
+      "type": "package",
+      "path": "system.data.sqlite.ef6/1.0.109",
+      "files": [
+        ".signature.p7s",
+        "content/net40/app.config.install.xdt",
+        "content/net40/app.config.transform",
+        "content/net40/web.config.install.xdt",
+        "content/net40/web.config.transform",
+        "content/net45/app.config.install.xdt",
+        "content/net45/app.config.transform",
+        "content/net45/web.config.install.xdt",
+        "content/net45/web.config.transform",
+        "content/net451/app.config.install.xdt",
+        "content/net451/app.config.transform",
+        "content/net451/web.config.install.xdt",
+        "content/net451/web.config.transform",
+        "content/net46/app.config.install.xdt",
+        "content/net46/app.config.transform",
+        "content/net46/web.config.install.xdt",
+        "content/net46/web.config.transform",
+        "lib/net40/System.Data.SQLite.EF6.dll",
+        "lib/net45/System.Data.SQLite.EF6.dll",
+        "lib/net451/System.Data.SQLite.EF6.dll",
+        "lib/net46/System.Data.SQLite.EF6.dll",
+        "system.data.sqlite.ef6.1.0.109.nupkg.sha512",
+        "system.data.sqlite.ef6.nuspec",
+        "tools/net40/install.ps1",
+        "tools/net45/install.ps1",
+        "tools/net451/install.ps1",
+        "tools/net46/install.ps1"
+      ]
+    },
+    "System.Data.SQLite.Linq/1.0.109": {
+      "sha512": "bGGAKuKmsDgCnMJG3OouR/p2O3gWtaJeU7aICOqx7IlSqZz+GXuY+K3z9EEK9FL7Rr/jode4aCqpCcYBeLxerw==",
+      "type": "package",
+      "path": "system.data.sqlite.linq/1.0.109",
+      "files": [
+        ".signature.p7s",
+        "content/net20/app.config.transform",
+        "content/net20/web.config.transform",
+        "content/net40/app.config.transform",
+        "content/net40/web.config.transform",
+        "content/net45/app.config.transform",
+        "content/net45/web.config.transform",
+        "content/net451/app.config.transform",
+        "content/net451/web.config.transform",
+        "content/net46/app.config.transform",
+        "content/net46/web.config.transform",
+        "lib/net20/System.Data.SQLite.Linq.dll",
+        "lib/net40/System.Data.SQLite.Linq.dll",
+        "lib/net45/System.Data.SQLite.Linq.dll",
+        "lib/net451/System.Data.SQLite.Linq.dll",
+        "lib/net46/System.Data.SQLite.Linq.dll",
+        "system.data.sqlite.linq.1.0.109.nupkg.sha512",
+        "system.data.sqlite.linq.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6": [
+      "EntityFramework >= 6.2.0",
+      "Microsoft.Office.Interop.Excel >= 15.0.4795.1000",
+      "System.Data.SQLite >= 1.0.109.2",
+      "System.Data.SQLite.Core >= 1.0.109.2",
+      "System.Data.SQLite.EF6 >= 1.0.109",
+      "System.Data.SQLite.Linq >= 1.0.109"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\wsx\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\sharp7-full-1.0.0\\WinForm\\CSharp\\CSClient\\WinClient.csproj",
+      "projectName": "WinClient",
+      "projectPath": "D:\\sharp7-full-1.0.0\\WinForm\\CSharp\\CSClient\\WinClient.csproj",
+      "packagesPath": "C:\\Users\\wsx\\.nuget\\packages\\",
+      "outputPath": "D:\\sharp7-full-1.0.0\\WinForm\\CSharp\\CSClient\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\wsx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net46"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\wsx\\.dotnet\\NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net46": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net46": {
+        "dependencies": {
+          "EntityFramework": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          },
+          "Microsoft.Office.Interop.Excel": {
+            "target": "Package",
+            "version": "[15.0.4795.1000, )"
+          },
+          "System.Data.SQLite": {
+            "target": "Package",
+            "version": "[1.0.109.2, )"
+          },
+          "System.Data.SQLite.Core": {
+            "target": "Package",
+            "version": "[1.0.109.2, )"
+          },
+          "System.Data.SQLite.EF6": {
+            "target": "Package",
+            "version": "[1.0.109, )"
+          },
+          "System.Data.SQLite.Linq": {
+            "target": "Package",
+            "version": "[1.0.109, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

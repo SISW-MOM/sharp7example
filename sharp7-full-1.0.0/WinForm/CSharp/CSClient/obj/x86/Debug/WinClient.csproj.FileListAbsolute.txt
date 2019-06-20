@@ -1,0 +1,10 @@
+D:\sharp7-full-1.0.0\WinForm\CSharp\bin\x86\CSClient.exe.config
+D:\sharp7-full-1.0.0\WinForm\CSharp\bin\x86\CSClient.exe
+D:\sharp7-full-1.0.0\WinForm\CSharp\bin\x86\CSClient.pdb
+D:\sharp7-full-1.0.0\WinForm\CSharp\CSClient\obj\x86\Debug\CSClient.MainForm.resources
+D:\sharp7-full-1.0.0\WinForm\CSharp\CSClient\obj\x86\Debug\CSClient.Properties.Resources.resources
+D:\sharp7-full-1.0.0\WinForm\CSharp\CSClient\obj\x86\Debug\CSClient.xmldate.resources
+D:\sharp7-full-1.0.0\WinForm\CSharp\CSClient\obj\x86\Debug\WinClient.csproj.GenerateResource.Cache
+D:\sharp7-full-1.0.0\WinForm\CSharp\CSClient\obj\x86\Debug\WinClient.csproj.CoreCompileInputs.cache
+D:\sharp7-full-1.0.0\WinForm\CSharp\CSClient\obj\x86\Debug\CSClient.exe
+D:\sharp7-full-1.0.0\WinForm\CSharp\CSClient\obj\x86\Debug\CSClient.pdb
